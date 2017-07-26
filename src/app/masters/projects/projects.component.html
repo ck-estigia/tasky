@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="page-header">
+    <h3>
+      <i class="fa fa-cubes"></i> Projects
+    </h3>
+  </div>
+  <p-dataList [value]="Projects" [rows]="5" [paginator]="true" [lazy]="true" (onLazyLoad)="loadData($event)" [totalRecords]="70">
+      <ng-template let-project pTemplate="item">
+        <h5 class="pull-right">Due date: {{project.DueDate}}</h5>
+        <h4 [ngStyle]="{color: project.TitleColor}"><i class="fa fa-cubes"></i> {{project.Project}}</h4>          
+        <i [ngClass]='{false:"fa-exclamation-circle", true: "fa-check-square-o"}[project.Status]' class="fa"></i> <small>{{project.Notes}}</small>       
+      </ng-template>
+  </p-dataList>
+</div>

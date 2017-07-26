@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-tag"></i> Tasky
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+        <ul class="nav navbar-nav">
+            <li [routerLinkActive]="['active']"><a [routerLink]="['projects']"><i class="fa fa-cubes"></i> Projects</a></li>    
+            <li [routerLinkActive]="['active']"><a [routerLink]="['task']"><i class="fa fa-tasks"></i> Tasks</a></li>    
+        </ul> 
+        <p class="navbar-text navbar-right">Signed in as Cristian Gonzalez</p> 
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+$fa-font-path: "~font-awesome/fonts";
+
+@import "assets/bootstrap-sass/variables";
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '~font-awesome/scss/font-awesome';
+
+$padding-top-fixed-nav: 50px;
+
+body { 
+    padding-top: $padding-top-fixed-nav; 
+} 
