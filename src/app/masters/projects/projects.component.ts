@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
   
   loadData(evt){
     this.Service.getPagedProjects(evt.firts, evt.rows).subscribe(projects => {
-      this.Projects = projects.slice(evt.firts, evt.firts + evt.rows);     
+      this.Projects = projects.slice(evt.first, evt.first + evt.rows);     
     });
   }
 }
